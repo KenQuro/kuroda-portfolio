@@ -2,6 +2,10 @@ body {
     background-color:#ccc;
 }
 
+span {
+  display: inline-block;
+}
+
 .title {
   font-family: 'Corben', cursive;
 }
@@ -20,13 +24,10 @@ body {
   padding-top: 60px;
 }
 
-img {
-  max-width:80%;
-}
-
 .profile-img {
   text-align: center;
   padding-top: 25px;
+  max-width:80%;
 }
 
 #gnav {
@@ -77,10 +78,13 @@ img {
   font-weight: bold;
 }
 
+#skill-card {
+  margin-bottom: 15px;
+}
+
 .card {
   border: 1px solid rgba(0,0,0,.3);
-  height: 220px;
-  margin-bottom:50px;
+  height: 250px;
   background-color: #eee;
 }
 
@@ -97,7 +101,8 @@ h3 {
 }
 
 .card-works {
-  height: 400px;
+  height: 420px;
+  margin-bottom: 15px;
 }
 
 .contact-text {
@@ -121,7 +126,6 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  width: 120px;
   text-align: center;
 }
 
@@ -144,4 +148,14 @@ nav ul li a {
   text-align: center;
   font-size: 6px;
   padding-top: 15px;
+}
+
+.twitter {
+  height: 40px;
+  padding-right: 20px;
+}
+
+.gmail {
+  height: 40px;
+  padding-right: 20px;
 }
