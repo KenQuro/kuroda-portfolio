@@ -1,33 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+
 body {
     background-color:#ccc;
 }
 
-span {
-  display: inline-block;
+.box {
+  width: 100vw;
+  height: 100vh;
+  display: flex; /* 要素をflexboxに対応させる */
+  align-items: center; /* 縦方向の中央揃え */
+  justify-content: center; /* 横方向の中央揃え */
+  flex-direction: column; /* 子要素の並びを上から下にする（要素の改行に対応） */
 }
 
-.title {
-  font-family: 'Corben', cursive;
-}
-
-.jumbotron{
-  background-image:url(umi.jpg);
+.box__bg_photo {
+  background-image: url(umi.jpg);
   background-size: cover;
-  background-position: center 60%;
+  background-position: center;
 }
 
-.main{
-  padding-bottom: 100px;
+#title {
+  font-size: 70px;
+  font-family: 'Noto Serif JP', sans-serif;
+  font-weight: 700;
 }
 
 .section {
-  padding-top: 60px;
+  padding: 60px 0 60px 0;
+}
+
+.content-section-heading h2{
+  font-size: 3rem;
+}
+
+#img01 {
+  display: flex;
+  align-items: center;
+  position:relative;
+  justify-content: center;
 }
 
 .profile-img {
-  text-align: center;
-  padding-top: 25px;
-  max-width:80%;
+  max-width:90%;
 }
 
 #gnav {
@@ -56,12 +70,35 @@ span {
   transition: background-color .2s linear;
 }
 
-.card-wrapper {
-  padding-top: 30px;
+.profile-box {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #5d627b;
+  background: white;
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+.about-me h3 {
+  font-size: 33px;  
+  border-bottom: 5px;
 }
 
-.skill-desc {
-  text-align: center;
+.about-me p {
+  line-height: 2;
+  font-size: 18px;
+}
+
+.personality {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.skill-background {
+  background-color: #006699;
+}
+
+.card-wrapper {
+  padding-top: 30px;
 }
 
 .text {
@@ -84,8 +121,7 @@ span {
 
 .card {
   border: 1px solid rgba(0,0,0,.3);
-  height: 250px;
-  background-color: #eee;
+  height: 250px;;
 }
 
 h3 {
@@ -138,8 +174,7 @@ nav ul li a {
   transition: background-color .2s linear;
 }
 
-.contact-text {
-  padding-top: 50px;
+.contact-text p{
   font-weight: bold;
   font-size: 22px;
 }
